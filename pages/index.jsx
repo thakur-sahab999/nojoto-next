@@ -1,11 +1,12 @@
 import Link from "next/link"
 
 import Layout from "../components/Layout"
+import Content from "../components/Common/Content.jsx"
 
 function Homepage() {
   return (
     <Layout>
-      <h1>hello</h1>
+      <Content />
     </Layout>
   )
 }

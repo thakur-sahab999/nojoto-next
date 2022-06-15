@@ -9,24 +9,21 @@ import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import Link from "next/link";
 import Image from "next/dist/client/image";
 
-function Navbar() {
-  const [showMenu, setShowMenu] = useState(false);
-  const ifMenu = () => {
-    setShowMenu(!showMenu);
-  };
+function Navbar({click}) {
+
 
   return (
     <>
       <div className={styles.navbar}>
         <div className={styles.navbarLeft}>
           <div className={styles.links}>
-            <MenuIcon onClick={ifMenu} id="button" className="menu" />
+            <MenuIcon onClick={click} id="button" className="menu" />
             <div className={styles.menu}>
               <Link href="/">
                 <Image src={nojoto} alt="" width={154} height={54} />
               </Link>
             </div>
-            <ArrowDropDownIcon onClick={ifMenu} id="button" />
+            <ArrowDropDownIcon  id="button" />
           </div>
         </div>
         <div className={styles.navbarRight}>
