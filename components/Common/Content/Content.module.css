@@ -61,6 +61,7 @@
 
 .cards{
     display: flex;
+
     overflow-x: scroll;
 
 }
@@ -82,3 +83,6 @@
         margin-top: 2rem;
     }
   }
+
+
+  
