@@ -1,0 +1,37 @@
+.cardContainer{
+    width: auto;
+    height: auto;
+    display: block;
+    margin:  3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 0.1px solid rgb(197, 181, 181);
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleLeft{
+    display: flex;
+}
+
+.profileImage{
+    padding:  2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.imageContainer{
+    margin:  3px 0px;
+}
+
+
+.details{
+    padding: 4px;
+  }

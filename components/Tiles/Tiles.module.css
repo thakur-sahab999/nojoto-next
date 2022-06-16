@@ -1,0 +1,19 @@
+.tileContainer{
+    margin: 0.4rem;
+    padding: 0.3rem;
+    width: auto;
+    background-color: #dedede;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    color: rgb(0, 0, 0);
+}
+
+.tileContainer:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(255, 3, 33);
+}
+

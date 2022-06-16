@@ -8,6 +8,7 @@ import ShopIcon from "@mui/icons-material/Shop";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import Link from "next/link";
 import Image from "next/dist/client/image";
+import SearchIcon from '@mui/icons-material/Search';
 
 function Navbar({click}) {
 
@@ -17,14 +18,20 @@ function Navbar({click}) {
       <div className={styles.navbar}>
         <div className={styles.navbarLeft}>
           <div className={styles.links}>
-            <MenuIcon onClick={click} id="button" className="menu" />
+            <MenuIcon onClick={click} id="button" className={styles.menuIcon} />
             <div className={styles.menu}>
               <Link href="/">
                 <Image src={nojoto} alt="" width={154} height={54} />
               </Link>
             </div>
-            <ArrowDropDownIcon  id="button" />
+            <p className={styles.langMenu}>English</p>
+            <ArrowDropDownIcon />
           </div>
+        </div>
+
+        <div className={styles.navbarCenter}>
+          <SearchIcon/>
+          <input placeholder="Search For People and Stories" className={styles.searchInput}></input>
         </div>
         <div className={styles.navbarRight}>
           <div className={styles.links}>

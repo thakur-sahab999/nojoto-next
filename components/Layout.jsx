@@ -1,8 +1,9 @@
-import styles from "../styles/News.module.css";
-import BottomNav from "./BottomNav/BottomNav";
+
+import BottomNav from "./Common/BottomNav/BottomNav.jsx"
 import Navbar from "./Common/Navbar/Navbar";
 import Sidebar from "./Common/Sidebar/Sidebar"
 import { useState } from "react";
+
 
 
 function Layout({ children }) {
@@ -18,6 +19,7 @@ function Layout({ children }) {
       <div>
         <Navbar click={sidebar} />
         <Sidebar />
+        {children}
         <BottomNav />
       </div>
     )
@@ -26,6 +28,7 @@ function Layout({ children }) {
 
       <div>
         <Navbar click={sidebar} />
+        {children}
         <BottomNav />
       </div>
     )

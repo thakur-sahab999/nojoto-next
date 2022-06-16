@@ -1,12 +1,12 @@
 .sidebar {
-    width: 400px;
+    width: 70%;
     position: fixed;
     font-family: 'Inter';
     background-color: rgb(235, 243, 243);
-    top: 50px;
-  
+    top: auto;
+
     left: 0;
-    height: 80%;
+    height: 85%;
     overflow-y: scroll;
 }
 
