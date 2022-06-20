@@ -1,14 +1,14 @@
 .navbar{
-    margin: 0;
-    padding-top: 0.2rem;
-    display: flex;
-    height: 50px;
+    background: #fff;
     width: 100%;
-    position:fixed;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0.5px 1px #b3afaf;
-    top:0;
-    left:0;
+    height: 62px;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+    display: flex;
 
 }
 #button:hover{

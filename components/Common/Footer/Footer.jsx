@@ -1,80 +1,63 @@
 import styles from "./Footer.module.css";
-import Tiles from "../../Tiles/Tiles";
+import goldBadge from "../../../public/resources/Banner/banner_0.jpg";
+import Image from "next/image";
 
-const Footer = ({ topics }) => {
-  const topic = topics;
+const Footer = () => {
   return (
     <div className={styles.footerContainer}>
-      <div className={styles.footer}>
-        <div className={styles.nojotoGold}>
-          <div className={styles.goldTitle}>
-            <h3>
-              Become{" "}
-              <span>
-                <img
-                  src="https://nojoto.com/resources/desktop/images/nojoto-gold-logo3.png"
-                  alt=""
-                  width="200"
-                />
-              </span>{" "}
-              Member
-            </h3>
+      <div className={styles.goldMain}>
+        <h3>
+          Become{" "}
+          <span>
+            <img
+              src="https://nojoto.com/resources/desktop/images/nojoto-gold-logo3.png"
+              width="15%"
+            />
+          </span>{" "}
+          Member
+        </h3>
+        <div className={styles.features}>
+          <div className={styles.benefitsList}>
+            <div className={styles.bl_img}>
+              <img
+                src="https://nojoto.com/resources/desktop/images/live_with_blackBg.png"
+                width="20%"
+              />
+            </div>
+            <div className={styles.bl_dt}>
+              <h4>Entertainment like never before</h4>
+              <p>Talk Shows, Stories, Comedy.</p>
+            </div>
           </div>
-          <ul className={styles.goldFeatures}>
-            <li className={styles.features}>
-              <div>
-                <img
-                  src="https://nojoto.com/resources/desktop/images/live_with_blackBg.png"
-                  alt=""
-                  width="50"
-                />
-              </div>
-              <div>
-                <h4 color="rgb(255, 3, 33)">Entertainment like never before</h4>
-                <p>Talk Shows, Stories, Comedy.</p>
-              </div>
-            </li>
-            <li className={styles.features}>
-              <div>
-                <img
-                  src="https://nojoto.com/resources/desktop/images/Gold-Badge.png"
-                  alt=""
-                  width="50"
-                />
-              </div>
-              <div>
-                <h4 color="rgb(255, 3, 33)">Gold Badge</h4>
-                <p>A unique profile always stands out.</p>
-              </div>
-            </li>
-            <li className={styles.features}>
-              <div>
-                <img
-                  src="https://nojoto.com/resources/desktop/images/Save-money.png"
-                  alt=""
-                  width="50"
-                />
-              </div>
-              <div>
-                <h4 color="rgb(255, 3, 33)">Save Rs 5000+/month</h4>
-                <p>By watching all Live Shows for free with Gold membership.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div className={styles.trendingTopics}>
-          <h3 className={styles.trendingTitle}>Trending Topics</h3>
-
-          <div className={styles.topics}>
-            <span>
-              {topic.map((data, id) => (
-                <Tiles data={data} key={id} />
-              ))}
-            </span>
+          <div className={styles.benefitsList}>
+            <div className={styles.bl_img}>
+              <img
+                src="https://nojoto.com/resources/desktop/images/Gold-Badge.png"
+                alt="Gold Badge"
+                width="20%"
+              />
+            </div>
+            <div className={styles.bl_dt}>
+              <h4>Gold Badge</h4>
+              <p>A unique profile always stands out.</p>
+            </div>
+          </div>
+          <div className={styles.benefitsList}>
+            <div className={styles.bl_img}>
+              <img
+                src="https://nojoto.com/resources/desktop/images/Save-money.png"
+                alt="Save upto money"
+                width="12%"
+              />
+            </div>
+            <div className={styles.bl_dt}>
+              <h4>Save Rs 5000+/month</h4>
+              <p>By watching all Live Shows for free with Gold membership.</p>
+            </div>
           </div>
         </div>
       </div>
+      <hr />
     </div>
   );
 };

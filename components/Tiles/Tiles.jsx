@@ -4,7 +4,7 @@ export default function Tiles({data}) {
   return (
       <div className={styles.tileContainer}>
           <Link href="/{data.topic}/{data.id}">
-              <p className={styles.data}>
+              <p>
                   {data.topic}
                 </p>
           </Link>

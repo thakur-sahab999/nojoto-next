@@ -1,19 +1,14 @@
 .tileContainer{
     margin: 0.4rem;
     padding: 0.3rem;
-    display:inline-block;
-    width: 20%;
+    width: auto;
     background-color: #dedede;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
     color: rgb(0, 0, 0);
-}
-
-.data{
-    padding: 5px;
 }
 
 .tileContainer:hover{

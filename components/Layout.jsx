@@ -3,8 +3,8 @@ import BottomNav from "./Common/BottomNav/BottomNav.jsx"
 import Navbar from "./Common/Navbar/Navbar";
 import Sidebar from "./Common/Sidebar/Sidebar"
 import { useState } from "react";
-import DesktopNav from "./Common/DesktopNav/DesktopNav.jsx";
-import styles from '../styles/Layout.module.css'
+
+
 
 function Layout({ children }) {
   const [hide, setHide] = useState(false)
@@ -18,7 +18,7 @@ function Layout({ children }) {
 
       <div>
         <Navbar click={sidebar} />
-                <Sidebar />
+        <Sidebar />
         {children}
         <BottomNav />
       </div>
@@ -28,10 +28,7 @@ function Layout({ children }) {
 
       <div>
         <Navbar click={sidebar} />
-        <div className={styles.content}>
-        <DesktopNav className={styles.desktopNav}/>
-          {children}
-        </div>
+        {children}
         <BottomNav />
       </div>
     )

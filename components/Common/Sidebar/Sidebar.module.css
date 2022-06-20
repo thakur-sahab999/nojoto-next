@@ -1,13 +1,19 @@
 .sidebar {
-    width: 70%;
+    background-color: rgb(255, 255, 255);
     position: fixed;
-    font-family: 'Inter';
-    background-color: rgb(235, 243, 243);
-    top: auto;
-
+    top: -131px;
+    right: 0;
+    bottom: -100px;
     left: 0;
-    height: 85%;
-    overflow-y: scroll;
+    z-index: 1;
+    width: var(--app-drawer-width, 400px);
+    padding: 155px 0 100px 0;
+    overflow: scroll;
+    margin: 0;
+    margin-top: 0px;
+    float: left;
+    margin-top: 37px;
+    border-right: 1px solid #eee;
 }
 
 .main {

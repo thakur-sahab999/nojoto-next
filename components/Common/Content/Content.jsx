@@ -6,7 +6,6 @@ import Banner from "../../../public/resources/Banner/banner_0.jpg";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Cards from "../Cards/Cards";
 import Footer from "../Footer/Footer";
-import DesktopNav from "../DesktopNav/DesktopNav"
 
 export default function Content() {
   const categories = [
@@ -169,87 +168,122 @@ export default function Content() {
 
   return (
     <div className={styles.contentContainer}>
-      
-      <div className={styles.categoryBar}>
-        {categories.map((topic, id) => (
-          <Tiles data={topic} key={id} />
-        ))}
+      <div className={styles.leftScroll}>
+        <li>aas</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
+        <li>aaj</li>
       </div>
-      <div className={styles.bannerContainer}>
-        <Link href="/">
-          <img
-            src="https://nojoto.com/resources/images/slider_home_banner1.jpg"
-            alt=""
-            width="70%"
-          />
-        </Link>
-      </div>
-      <div className={styles.feeds}>
-        <div className={styles.feedHeader}>
-          <h3>Upcoming Live Shows</h3>
-          <div className={styles.tileContainer}>
-            <Link href="/">
-              <div className={styles.tile}>
-                <p>view all</p>
-                <ArrowForwardIosIcon />
-              </div>
-            </Link>
-          </div>
-        </div>
-        <div className={styles.cards}>
-          {cards.map((card, id) => (
-            <Cards data={card} key={id} />
+      <div className={styles.contentRight}>
+        <div className={styles.categoryBar}>
+          {categories.map((topic, id) => (
+            <Tiles data={topic} key={id} />
           ))}
         </div>
-        <div className={styles.feedHeader}>
-          <h3>Current Live Shows</h3>
-          <div className={styles.tileContainer}>
-            <Link href="/">
-              <div className={styles.tile}>
-                <p>view all</p>
-                <ArrowForwardIosIcon />
-              </div>
-            </Link>
+        <div className={styles.bannerContainer}>
+          <Link href="/">
+            <img
+              src="https://nojoto.com/resources/images/slider_home_banner1.jpg"
+              alt=""
+              width="90%"
+            />
+          </Link>
+        </div>
+        <div className={styles.feeds}>
+          <div className={styles.feedHeader}>
+            <h3>Upcoming Live Shows</h3>
+            <div className={styles.tileContainer}>
+              <Link href="/">
+                <div className={styles.tile}>
+                  <p>view all</p>
+                  <ArrowForwardIosIcon />
+                </div>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className={styles.cards}>
-          {cards.map((card, id) => (
-            <Cards data={card} key={id} />
-          ))}
-        </div>
-        <div className={styles.feedHeader}>
-          <h3>Popular Stories</h3>
-          <div className={styles.tileContainer}>
-            <Link href="/">
-              <div className={styles.tile}>
-                <p>view all</p>
-                <ArrowForwardIosIcon />
-              </div>
-            </Link>
+          <div className={styles.cards}>
+            {cards.map((card, id) => (
+              <Cards data={card} key={id} />
+            ))}
           </div>
-        </div>
-        <div className={styles.cards}>
-              {cards.map((card, id) => (
-                <Cards data={card} key={id} />
-              ))}
-        </div>
-        <div className={styles.feedHeader}>
-          <h3>Trending Videos</h3>
-          <div className={styles.tileContainer}>
-            <Link href="/">
-              <div className={styles.tile}>
-                <p>view all</p>
-                <ArrowForwardIosIcon />
-              </div>
-            </Link>
+          <div className={styles.feedHeader}>
+            <h3>Current Live Shows</h3>
+            <div className={styles.tileContainer}>
+              <Link href="/">
+                <div className={styles.tile}>
+                  <p>view all</p>
+                  <ArrowForwardIosIcon />
+                </div>
+              </Link>
+            </div>
           </div>
+          <div className={styles.cards}>
+            {cards.map((card, id) => (
+              <Cards data={card} key={id} />
+            ))}
+          </div>
+          <div className={styles.feedHeader}>
+            <h3>Popular Stories</h3>
+            <div className={styles.tileContainer}>
+              <Link href="/">
+                <div className={styles.tile}>
+                  <p>view all</p>
+                  <ArrowForwardIosIcon />
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className={styles.cards}>
+            {cards.map((card, id) => (
+              <Cards data={card} key={id} />
+            ))}
+          </div>
+          <div className={styles.feedHeader}>
+            <h3>Trending Videos</h3>
+            <div className={styles.tileContainer}>
+              <Link href="/">
+                <div className={styles.tile}>
+                  <p>view all</p>
+                  <ArrowForwardIosIcon />
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className={styles.cards}>
+            {cards.map((card, id) => (
+              <Cards data={card} key={id} />
+            ))}
+          </div>
+          <hr />
+          <Footer />
         </div>
-        <div className={styles.cards}>
-          {cards.map((card, id) => (
-            <Cards data={card} key={id} />
-          ))}
-        </div>
-        <Footer topics={categories}/>
       </div>
     </div>
   );

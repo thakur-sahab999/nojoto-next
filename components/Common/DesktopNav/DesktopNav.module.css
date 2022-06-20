@@ -1,6 +1,7 @@
 
 .desktopNav{
         width: 30%;
+        top: 200px;
         display: none;
         background-color: aquamarine;
     }
