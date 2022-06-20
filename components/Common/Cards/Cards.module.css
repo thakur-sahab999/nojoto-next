@@ -1,6 +1,6 @@
 .cardContainer{
-    
-    display: block;
+
+    width: 20%;
     margin:  3px;
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
@@ -33,4 +33,13 @@
 
 .details{
     padding: 4px;
+  }
+
+
+  @media only screen and (max-width: 768px){
+    .cardContainer{
+
+        width: 40%;
+        height: 40%;
+    }
   }

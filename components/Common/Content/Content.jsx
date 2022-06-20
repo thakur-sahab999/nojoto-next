@@ -6,6 +6,7 @@ import Banner from "../../../public/resources/Banner/banner_0.jpg";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Cards from "../Cards/Cards";
 import Footer from "../Footer/Footer";
+import DesktopNav from "../DesktopNav/DesktopNav"
 
 export default function Content() {
   const categories = [
@@ -168,6 +169,7 @@ export default function Content() {
 
   return (
     <div className={styles.contentContainer}>
+      
       <div className={styles.categoryBar}>
         {categories.map((topic, id) => (
           <Tiles data={topic} key={id} />
@@ -175,7 +177,11 @@ export default function Content() {
       </div>
       <div className={styles.bannerContainer}>
         <Link href="/">
-          <img src="https://nojoto.com/resources/images/slider_home_banner1.jpg" alt="" width="90%" />
+          <img
+            src="https://nojoto.com/resources/images/slider_home_banner1.jpg"
+            alt=""
+            width="70%"
+          />
         </Link>
       </div>
       <div className={styles.feeds}>
@@ -191,11 +197,9 @@ export default function Content() {
           </div>
         </div>
         <div className={styles.cards}>
-          {
-            cards.map((card, id) => (
-              <Cards data={card} key={id}/>
-            ))
-          }
+          {cards.map((card, id) => (
+            <Cards data={card} key={id} />
+          ))}
         </div>
         <div className={styles.feedHeader}>
           <h3>Current Live Shows</h3>
@@ -209,11 +213,9 @@ export default function Content() {
           </div>
         </div>
         <div className={styles.cards}>
-          {
-            cards.map((card, id) => (
-              <Cards data={card} key={id}/>
-            ))
-          }
+          {cards.map((card, id) => (
+            <Cards data={card} key={id} />
+          ))}
         </div>
         <div className={styles.feedHeader}>
           <h3>Popular Stories</h3>
@@ -227,11 +229,9 @@ export default function Content() {
           </div>
         </div>
         <div className={styles.cards}>
-          {
-            cards.map((card, id) => (
-              <Cards data={card} key={id}/>
-            ))
-          }
+              {cards.map((card, id) => (
+                <Cards data={card} key={id} />
+              ))}
         </div>
         <div className={styles.feedHeader}>
           <h3>Trending Videos</h3>
@@ -245,13 +245,11 @@ export default function Content() {
           </div>
         </div>
         <div className={styles.cards}>
-          {
-            cards.map((card, id) => (
-              <Cards data={card} key={id}/>
-            ))
-          }
+          {cards.map((card, id) => (
+            <Cards data={card} key={id} />
+          ))}
         </div>
-        <Footer/>
+        <Footer topics={categories}/>
       </div>
     </div>
   );

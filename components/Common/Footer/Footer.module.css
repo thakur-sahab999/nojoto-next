@@ -1,3 +1,50 @@
 .footerContainer{
     height: 80%;
+    margin-top:1 rem;
+}
+
+.goldTitle{
+    text-align: center;
+}
+.nojotoGold{
+
+    align-items: center;
+    text-align: center;
+    padding: 0rem 2rem;
+}
+
+.goldTitle{
+    margin: 2rem;
+}
+
+.goldFeatures{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.features{
+    display: flex;
+    padding: 2rem;
+}
+
+.trendingTopics{
+    margin-top: 2rem;
+}
+
+.trendingTitle{
+    font-weight: 600;
+}
+
+.topics{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (max-width: 768px) {
+    .goldFeatures{
+        flex-direction: column;
+    }
 }
