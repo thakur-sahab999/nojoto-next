@@ -16,7 +16,7 @@
   bottom: -100px;
   left: 0;
   z-index: 1;
-  width: var(--app-drawer-width, 225px);
+  width: 20vw;
   padding: 155px 0 100px 0;
   overflow: scroll;
   margin: 0;
@@ -27,13 +27,55 @@
 }
 
 .contentRight {
-  width: 82%;
+  width: 80vw;
+
   float: right;
   padding-left:  1rem;
   margin-top: 65px;
   position: relative;
   min-height: 400px;
 }
+
+.listItemContainer{
+  background-color: #f8f7f7;
+}
+
+.listItem{
+  display: flex;
+  align-items: center;
+  font-size: small;
+  margin-bottom: 1rem;
+  padding: 0rem 2rem;
+}
+
+.listItem .text{
+    margin-left: 1rem;
+}
+
+.menuItem{
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size:0.9rem;
+  background-color: #efefef;
+
+
+}
+
+.menuItem .text{
+  color: rgb(0, 0, 0);
+ 
+  margin-left: 1rem;
+
+}
+
+.menuItem .Icon{
+  color: #504d4d;
+  align-items: center;
+  padding: 0.2;
+}
+
 .categoryBar {
   width: auto;
   display: flex;
@@ -43,6 +85,7 @@
 .categoryBar::-webkit-scrollbar {
   display: none;
 }
+
 
 .bannerContainer {
   width: auto;
@@ -83,6 +126,31 @@
 .cards {
   display: flex;
   overflow-x: scroll;
+}
+
+.listItemContainer:hover{
+  cursor: pointer;
+  background-color: #dedede;
+}
+
+.menuItem:hover{
+  cursor: pointer;
+  background-color: #dedede;
+}
+
+.menuItem .Icon:hover{
+  color: rgb(239, 14, 14);
+
+}
+
+.cards:hover{
+  cursor: pointer;
+}
+
+.tileContainer:hover{
+  cursor: pointer;
+  color: #ffffff;
+  background-color:  rgb(239, 14, 14);
 }
 
 .cards::-webkit-scrollbar {

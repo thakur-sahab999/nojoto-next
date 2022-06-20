@@ -31,10 +31,12 @@
 
 
 
-.link :hover{
+
+
+.refer:hover{
+    cursor: pointer;
     color: red;
 }
-
 
 @media only screen and (min-width: 768px){
     .bottomNav{

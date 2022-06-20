@@ -1,14 +1,22 @@
 .tileContainer{
-    margin: 0.4rem;
-    padding: 0.3rem;
+    line-height: 30px;
+    background-color: #dedede !important;
+    box-shadow: none !important;
+    color: #202020 !important;
+    border: 1px solid #ccc !important;
     width: auto;
-    background-color: #dedede;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    color: rgb(0, 0, 0);
+    float: none;
+    display: inline-block;
+    padding: 1px 18px;
+    margin: 0 3px 10px 3px;
+    background: -moz-linear-gradient(top,#f9f9f9 0%,#ededed 100%);
+    background: -webkit-linear-gradient(top,#f9f9f9 0%,#ededed 100%);
+    background: linear-gradient(to bottom,#f9f9f9 0%,#ededed 100%);
+      background-color: rgba(0, 0, 0, 0);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9',endColorstr='#ededed',GradientType=0);
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 20px;
 }
 
 .tileContainer:hover{

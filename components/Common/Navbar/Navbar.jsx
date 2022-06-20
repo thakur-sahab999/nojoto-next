@@ -8,6 +8,7 @@ import ShopIcon from "@mui/icons-material/Shop";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import Link from "next/link";
 import Image from "next/dist/client/image";
+import PodcastsIcon from '@mui/icons-material/Podcasts';
 import SearchIcon from '@mui/icons-material/Search';
 
 function Navbar({click}) {
@@ -34,7 +35,7 @@ function Navbar({click}) {
           <input placeholder="Search For People and Stories" className={styles.searchInput}></input>
         </div>
         <div className={styles.navbarRight}>
-          <div className={styles.links}>
+          <div className={styles.rightLinks}>
             <div className={styles.refer}>
               <Link href="/shop">
                 <ShopIcon />
@@ -48,6 +49,21 @@ function Navbar({click}) {
               <p>Shop</p>
             </div>
           </div>
+          <div className={styles.desktopLinks}>
+            <div className={styles.refer}>
+              <Link href="/shop">
+                <PodcastsIcon />
+              </Link>
+              <p>Live Show</p>
+            </div>
+            <div className={styles.refer}>
+              <Link href="/shop">
+                <ShoppingBagIcon />
+              </Link>
+              <p>Shop</p>
+            </div>
+            <button className={styles.button}>LOGIN</button>
+            </div>
         </div>
       </div>
     </>
