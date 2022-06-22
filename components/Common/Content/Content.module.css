@@ -1,12 +1,4 @@
-.contentContainer {
-  float: right;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 6px;
-  position: relative;
-  min-width: 100%;
-  width: 100%;
-}
+
 
 .leftScroll {
   background-color: rgb(255, 255, 255);
@@ -26,15 +18,7 @@
   border-right: 1px solid #eee;
 }
 
-.contentRight {
-  width: 80vw;
 
-  float: right;
-  padding-left:  1rem;
-  margin-top: 65px;
-  position: relative;
-  min-height: 400px;
-}
 
 .listItemContainer{
   background-color: #f8f7f7;
@@ -127,6 +111,19 @@
   display: flex;
   overflow-x: scroll;
 }
+
+
+.mp_main {
+  width: 100%;
+  margin: 0 auto;
+  float: left;
+  position: relative;
+  background-color: #fff;
+  padding-top: 0;
+}
+
+
+
 
 .listItemContainer:hover{
   cursor: pointer;

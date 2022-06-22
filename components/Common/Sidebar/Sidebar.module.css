@@ -14,6 +14,7 @@
     float: left;
     margin-top: 37px;
     border-right: 1px solid #eee;
+    font-size: 1rem;
 }
 
 .main {
@@ -26,7 +27,7 @@
 }
 .menuGroupLabel {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     margin: 10px 0;
     padding-left: 10px;
     padding-right: 10px;
@@ -35,11 +36,13 @@
 .menuItem {
     display: flex;
     align-items: center;
-    padding:  10px 10px;
+
+    padding:  10px 20px;
 }
 
 .menu-item i {
     width: 30px;
+   margin-left: 10px;
 }
 
 .welcome {
@@ -85,7 +88,7 @@
     border: none;
     color: aliceblue;
     height: 2rem;
-    width: 5rem;
+    width: 6rem;
     font-weight: 400;
     font-size: 1rem;
     border-radius: 20px;
@@ -96,12 +99,12 @@
 }
 
 #menu-icon{
-    font-size: 1rem;
     padding-right: 0.5rem;
 }
 
 .menuItemContainer:hover{
     background-color: lightgrey;
+
     cursor: pointer;
 }
 
@@ -115,4 +118,5 @@
 }
 .button:hover{
     cursor: pointer;
+
 }

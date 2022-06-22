@@ -6,7 +6,6 @@ import Tiles from "../../Tiles/Tiles";
 const Footer = ({ topics }) => {
   console.log(topics)
   return (
-    
     <div className={styles.footerContainer}>
       <div className={styles.goldMain}>
         <h3>

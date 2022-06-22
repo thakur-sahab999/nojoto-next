@@ -1,24 +1,22 @@
 import styles from "./Content.module.css";
-import Tiles from "../../../components/Tiles/Tiles.jsx";
+import Tiles from "../../Tiles/Tiles.jsx";
 import Link from "next/link";
 import Image from "next/dist/client/image";
 import Banner from "../../../public/resources/Banner/banner_0.jpg";
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Cards from "../Cards/Cards";
 import Footer from "../Footer/Footer";
-import ShopIcon from '@mui/icons-material/Shop';
-import HomeIcon from '@mui/icons-material/Home';
-import SearchIcon from '@mui/icons-material/Search';
-import PixIcon from '@mui/icons-material/Pix';
-import OnlinePredictionIcon from '@mui/icons-material/OnlinePrediction';
-import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
-import LanguageIcon from '@mui/icons-material/Language';
-import RssFeedIcon from '@mui/icons-material/RssFeed';
-import { Icon } from '@iconify/react';
-
+import ShopIcon from "@mui/icons-material/Shop";
+import HomeIcon from "@mui/icons-material/Home";
+import SearchIcon from "@mui/icons-material/Search";
+import PixIcon from "@mui/icons-material/Pix";
+import OnlinePredictionIcon from "@mui/icons-material/OnlinePrediction";
+import CollectionsBookmarkIcon from "@mui/icons-material/CollectionsBookmark";
+import LanguageIcon from "@mui/icons-material/Language";
+import RssFeedIcon from "@mui/icons-material/RssFeed";
+import { Icon } from "@iconify/react";
 
 export default function Content() {
-
   const topics = [
     {
       id: "12",
@@ -102,18 +100,17 @@ export default function Content() {
     },
   ];
 
-
   const categories = [
-    { text: "Popular", url: "/popular", id:"1" },
-    { text: "Quotes", url: "/popular",  id:"2"},
-    { text: "Today", url: "/popular",id:"3" },
-    { text: "Shayari & Gazal", url: "/popular", id:"4" },
-    { text: "Suspense & Thriller", url: "/popular", id:"5" },
-    { text: "Opinion & Thoughts", url: "/popular", id:"6" },
-    { text: "Horror", url: "/popular", id:"7" },
-    { text: "Love & Romanced", url: "/popular", id:"8" },
-    { text: "Poetry", url: "/popular", id:"9" },
-    { text: "Society & Culture", url: "/popular", id:"10" },
+    { text: "Popular", url: "/popular", id: "1" },
+    { text: "Quotes", url: "/popular", id: "2" },
+    { text: "Today", url: "/popular", id: "3" },
+    { text: "Shayari & Gazal", url: "/popular", id: "4" },
+    { text: "Suspense & Thriller", url: "/popular", id: "5" },
+    { text: "Opinion & Thoughts", url: "/popular", id: "6" },
+    { text: "Horror", url: "/popular", id: "7" },
+    { text: "Love & Romanced", url: "/popular", id: "8" },
+    { text: "Poetry", url: "/popular", id: "9" },
+    { text: "Society & Culture", url: "/popular", id: "10" },
   ];
 
   const cards = [
@@ -201,75 +198,8 @@ export default function Content() {
   ];
 
   return (
-    <div className={styles.contentContainer}>
-      <div className={styles.leftScroll}>
-
-        <div className={styles.menuItem}>
-          <ShopIcon  className={styles.Icon} />
-          <span className={styles.text}>Nojoto App Download</span>
-        </div>
-        <div className={styles.menuItem}>
-          <HomeIcon  className={styles.Icon} />
-          <span className={styles.text}>Home</span>
-        </div>
-        <div className={styles.menuItem}>
-          <SearchIcon  className={styles.Icon} />
-          <span className={styles.text}>Explore</span>
-        </div>
-        <div className={styles.menuItem}>
-          <PixIcon   className={styles.Icon} />
-          <span className={styles.text}>Popular</span>
-        </div>
-        <div className={styles.menuItem}>
-          <OnlinePredictionIcon  className={styles.Icon} />
-          <span className={styles.text}>Live Shows</span>
-        </div>
-        <div className={styles.menuItem}>
-        <Icon icon="mdi:crown" height="27" className={styles.Icon}/>
-          <span className={styles.text}>Buy Nojoto Gold</span>
-        </div>
-        <div className={styles.menuItem}>
-          <CollectionsBookmarkIcon  className={styles.Icon} />
-          <span className={styles.text}>Categories</span>
-        </div>
-
-        <ul className={styles.menuGroup}>
-        {categories.map((menu) => (
-          <div className={styles.listItemContainer}>
-          <li className={styles.listItem}>
-              <ArrowForwardIosIcon id="menu-icon"  className={styles.Icon}/>
-              <span className={styles.text}>
-                <Link href={menu.url} className={styles.a}>{menu.text}</Link>
-                </span>
-          </li>
-          </div>
-        ))}
-        </ul>
-
-        <div className={styles.menuItem}>
-          <LanguageIcon  className={styles.Icon} />
-          <span className={styles.text}>Languages</span>
-        </div>
-        <ul className={styles.menuGroup}>
-        {language.map((menu) => (
-          <div className={styles.listItemContainer}>
-          <li className={styles.listItem}>
-              <ArrowForwardIosIcon id="menu-icon"  className={styles.Icon}/>
-              <span className={styles.text}>
-                <Link href={menu.url} className={styles.a}>{menu.text}</Link>
-                </span>
-          </li>
-          </div>
-        ))}
-        </ul>
-        <hr />
-        <div className={styles.menuItem}>
-          <RssFeedIcon  className={styles.Icon} />
-          <span className={styles.text}>RSS</span>
-        </div>
-
-      </div>
-      <div className={styles.contentRight}>
+    <div className="contentContainer">
+      <div className="contentRight">
         <div className={styles.categoryBar}>
           {topics.map((topic, id) => (
             <Tiles data={topic} key={id} />
@@ -350,7 +280,7 @@ export default function Content() {
             ))}
           </div>
           <hr />
-          <Footer topics={topics}/>
+          <Footer topics={topics} />
         </div>
       </div>
     </div>

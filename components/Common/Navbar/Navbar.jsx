@@ -62,7 +62,7 @@ function Navbar({click}) {
               </Link>
               <p>Shop</p>
             </div>
-            <button className={styles.button}>LOGIN</button>
+            <button className={styles.button} > <Link href="/profile">LOGIN</Link> </button>
             </div>
         </div>
       </div>

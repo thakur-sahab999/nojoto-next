@@ -4,7 +4,7 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Link from "next/link";
 
-export default function Sidebar() {
+export default function Sidebar({click}) {
   const main = [
     { text: "Popular", url: "/popular" },
     { text: "Live Show", url: "/live" },
@@ -34,7 +34,7 @@ export default function Sidebar() {
     {text: "Buy Nojoto Gold", url: "/buygold"}
   ]
   return (
-    <div className={styles.sidebar}>
+    <div className={styles.sidebar} >
       <div className={styles.welcome}>
         <div className={styles.welLeft}>
           <AccountCircleOutlinedIcon className={styles.leftIcon} />

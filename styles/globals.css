@@ -13,3 +13,33 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.contentContainer {
+  float: right;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 6px;
+  position: relative;
+  min-width: 100%;
+  width: 100%;
+}
+
+.contentRight {
+  width: 80vw;
+
+  float: right;
+  padding-left:  1rem;
+  margin-top: 65px;
+  position: relative;
+  min-height: 400px;
+}
+
+
+@media only screen and (max-width: 768px){
+
+
+  .contentRight{
+      width: 100%;
+  }
+}
