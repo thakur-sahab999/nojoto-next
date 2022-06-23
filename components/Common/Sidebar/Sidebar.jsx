@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default function Sidebar({click}) {
   const main = [
-    { text: "Popular", url: "/popular" },
+    { text: "Popular", url: "/topics" },
     { text: "Live Show", url: "/live" },
   ];
   const categories = [
-    { text: "Popular", url: "/popular" },
+    { text: "Popular", url: "/topics" },
     { text: "Quotes", url: "/popular" },
     { text: "Today", url: "/popular" },
     { text: "Shayari & Gazal", url: "/popular" },

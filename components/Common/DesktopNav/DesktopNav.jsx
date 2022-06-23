@@ -50,8 +50,10 @@ function DesktopNav() {
           <span className={styles.text}>Explore</span>
         </div>
         <div className={styles.menuItem}>
-          <PixIcon className={styles.Icon} />
+        <PixIcon className={styles.Icon} />
+        <Link href="/topics">
           <span className={styles.text}>Popular</span>
+          </Link>
         </div>
         <div className={styles.menuItem}>
           <OnlinePredictionIcon className={styles.Icon} />

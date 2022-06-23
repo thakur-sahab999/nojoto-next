@@ -1,0 +1,34 @@
+.TopicsContainer{
+    display: inline-block;
+    margin: 2rem auto;
+    float:left;
+    padding: 0;
+    list-style-type: none;
+    width: 78vw;
+}
+
+.TopicsContainer >ul{
+    box-sizing: border-box;
+    list-style: none;
+    overflow: scroll;
+}
+
+.TopicsContainer {
+
+    float: left;
+    margin: 5px 1% 1.65% 1%;
+    min-height: 250px;
+    color: rgb(0, 0, 0);
+    position: relative;
+  }
+
+
+  @media only screen and (max-width: 880px){
+    .TopicsContainer{
+        width: 100vw;
+    }
+
+    .TopicsContainer {
+        margin: 0px auto 1.65% auto;
+    }
+  }

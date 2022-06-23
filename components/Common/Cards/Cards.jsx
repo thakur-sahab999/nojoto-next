@@ -24,8 +24,7 @@ export default function Cards({ data }) {
         <img
           src="https://media.nojoto.com/content/media/45712/2022/06/feed/cf9e30576ec3824f41678efe462109a0/cf9e30576ec3824f41678efe462109a0_default.jpg"
           alt=""
-          width="200px"
-          height="350px"
+
          className={styles.image}/>
       </div>
       <div className={styles.details}>

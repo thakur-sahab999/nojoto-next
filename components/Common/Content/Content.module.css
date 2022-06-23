@@ -108,6 +108,7 @@
 }
 
 .cards {
+  width: 100%;
   display: flex;
   overflow-x: scroll;
 }
@@ -154,7 +155,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 870px) {
   .categoryBar {
     display: none;
   }
@@ -165,7 +166,7 @@
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 870px){
     .leftScroll{
         display: none;
     }
