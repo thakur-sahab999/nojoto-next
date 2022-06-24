@@ -23,6 +23,8 @@ a {
   position: relative;
   min-width: 100%;
   width: 100%;
+
+  bottom: 80px;
 }
 
 .contentRight {

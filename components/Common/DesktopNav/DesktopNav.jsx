@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from './DesktopNav.module.css'
+import React from "react";
+import styles from "./DesktopNav.module.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchIcon from "@mui/icons-material/Search";
@@ -9,7 +9,7 @@ import CollectionsBookmarkIcon from "@mui/icons-material/CollectionsBookmark";
 import LanguageIcon from "@mui/icons-material/Language";
 import RssFeedIcon from "@mui/icons-material/RssFeed";
 import ShopIcon from "@mui/icons-material/Shop";
-import Link from 'next/link';
+import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 function DesktopNav() {
@@ -36,79 +36,80 @@ function DesktopNav() {
   ];
 
   return (
-          <div className={styles.leftScroll}>
-        <div className={styles.menuItem}>
-          <ShopIcon className={styles.Icon} />
-          <span className={styles.text}>Nojoto App Download</span>
-        </div>
-        <div className={styles.menuItem}>
-          <HomeIcon className={styles.Icon} />
-          <span className={styles.text}>Home</span>
-        </div>
-        <div className={styles.menuItem}>
-          <SearchIcon className={styles.Icon} />
+    <div className={styles.leftScroll}>
+      <div className={styles.menuItem}>
+        <ShopIcon className={styles.Icon} />
+        <span className={styles.text}>Nojoto App Download</span>
+      </div>
+      <div className={styles.menuItem}>
+        <HomeIcon className={styles.Icon} />
+        <span className={styles.text}>Home</span>
+      </div>
+      <div className={styles.menuItem}>
+        <SearchIcon className={styles.Icon} />
+        <Link href="/explore">
           <span className={styles.text}>Explore</span>
-        </div>
-        <div className={styles.menuItem}>
+        </Link>
+      </div>
+      <div className={styles.menuItem}>
         <PixIcon className={styles.Icon} />
         <Link href="/topics">
           <span className={styles.text}>Popular</span>
-          </Link>
-        </div>
-        <div className={styles.menuItem}>
-          <OnlinePredictionIcon className={styles.Icon} />
-          <span className={styles.text}>Live Shows</span>
-        </div>
-        <div className={styles.menuItem}>
-          <Icon icon="mdi:crown" height="27" className={styles.Icon} />
-          <span className={styles.text}>Buy Nojoto Gold</span>
-        </div>
-        <div className={styles.menuItem}>
-          <CollectionsBookmarkIcon className={styles.Icon} />
-          <span className={styles.text}>Categories</span>
-        </div>
-
-        <ul className={styles.menuGroup}>
-          {categories.map((menu) => (
-            <div className={styles.listItemContainer}>
-              <li className={styles.listItem}>
-                <ArrowForwardIosIcon id="menu-icon" className={styles.Icon} />
-                <span className={styles.text}>
-                  <Link href={menu.url} className={styles.a}>
-                    {menu.text}
-                  </Link>
-                </span>
-              </li>
-            </div>
-          ))}
-        </ul>
-
-        <div className={styles.menuItem}>
-          <LanguageIcon className={styles.Icon} />
-          <span className={styles.text}>Languages</span>
-        </div>
-        <ul className={styles.menuGroup}>
-          {language.map((menu) => (
-            <div className={styles.listItemContainer}>
-              <li className={styles.listItem}>
-                <ArrowForwardIosIcon id="menu-icon" className={styles.Icon} />
-                <span className={styles.text}>
-                  <Link href={menu.url} className={styles.a}>
-                    {menu.text}
-                  </Link>
-                </span>
-              </li>
-            </div>
-          ))}
-        </ul>
-        <hr />
-        <div className={styles.menuItem}>
-          <RssFeedIcon className={styles.Icon} />
-          <span className={styles.text}>RSS</span>
-        </div>
+        </Link>
+      </div>
+      <div className={styles.menuItem}>
+        <OnlinePredictionIcon className={styles.Icon} />
+        <span className={styles.text}>Live Shows</span>
+      </div>
+      <div className={styles.menuItem}>
+        <Icon icon="mdi:crown" height="27" className={styles.Icon} />
+        <span className={styles.text}>Buy Nojoto Gold</span>
+      </div>
+      <div className={styles.menuItem}>
+        <CollectionsBookmarkIcon className={styles.Icon} />
+        <span className={styles.text}>Categories</span>
       </div>
 
-  )
+      <ul className={styles.menuGroup}>
+        {categories.map((menu) => (
+          <div className={styles.listItemContainer}>
+            <li className={styles.listItem}>
+              <ArrowForwardIosIcon id="menu-icon" className={styles.Icon} />
+              <span className={styles.text}>
+                <Link href={menu.url} className={styles.a}>
+                  {menu.text}
+                </Link>
+              </span>
+            </li>
+          </div>
+        ))}
+      </ul>
+
+      <div className={styles.menuItem}>
+        <LanguageIcon className={styles.Icon} />
+        <span className={styles.text}>Languages</span>
+      </div>
+      <ul className={styles.menuGroup}>
+        {language.map((menu) => (
+          <div className={styles.listItemContainer}>
+            <li className={styles.listItem}>
+              <ArrowForwardIosIcon id="menu-icon" className={styles.Icon} />
+              <span className={styles.text}>
+                <Link href={menu.url} className={styles.a}>
+                  {menu.text}
+                </Link>
+              </span>
+            </li>
+          </div>
+        ))}
+      </ul>
+      <hr />
+      <div className={styles.menuItem}>
+        <RssFeedIcon className={styles.Icon} />
+        <span className={styles.text}>RSS</span>
+      </div>
+    </div>
+  );
 }
 
-export default DesktopNav
+export default DesktopNav;
