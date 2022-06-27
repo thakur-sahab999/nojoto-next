@@ -53,7 +53,7 @@ function DesktopNav() {
       </div>
       <div className={styles.menuItem}>
         <PixIcon className={styles.Icon} />
-        <Link href="/topics">
+        <Link href="/popular">
           <span className={styles.text}>Popular</span>
         </Link>
       </div>

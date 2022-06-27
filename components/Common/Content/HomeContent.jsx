@@ -1,20 +1,11 @@
 import styles from "./Content.module.css";
 import Tiles from "../../Tiles/Tiles.jsx";
 import Link from "next/link";
-import Image from "next/dist/client/image";
-import Banner from "../../../public/resources/Banner/banner_0.jpg";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Cards from "../Cards/Cards";
 import Footer from "../Footer/Footer";
-import ShopIcon from "@mui/icons-material/Shop";
-import HomeIcon from "@mui/icons-material/Home";
-import SearchIcon from "@mui/icons-material/Search";
-import PixIcon from "@mui/icons-material/Pix";
-import OnlinePredictionIcon from "@mui/icons-material/OnlinePrediction";
-import CollectionsBookmarkIcon from "@mui/icons-material/CollectionsBookmark";
-import LanguageIcon from "@mui/icons-material/Language";
-import RssFeedIcon from "@mui/icons-material/RssFeed";
-import { Icon } from "@iconify/react";
+
+
 
 export default function Content() {
   const topics = [
@@ -280,7 +271,7 @@ export default function Content() {
             ))}
           </div>
           <hr />
-          <Footer topics={topics} />
+          <Footer/>
         </div>
       </div>
     </div>

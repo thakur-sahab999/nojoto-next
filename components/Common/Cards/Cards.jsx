@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Cards.module.css";
-import Image from "next/dist/client/image";
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 export default function Cards({ data }) {
   return (

@@ -3,7 +3,89 @@ import goldBadge from "../../../public/resources/Banner/banner_0.jpg";
 import Image from "next/image";
 import Tiles from "../../Tiles/Tiles";
 
-const Footer = ({ topics }) => {
+const Footer = () => {
+  const topics = [
+    {
+      id: "12",
+      topic: "Popular",
+    },
+    {
+      id: "13",
+      topic: "Live",
+    },
+    {
+      id: "14",
+      topic: "Music",
+    },
+    {
+      id: "15",
+      topic: "Qoutes",
+    },
+    {
+      id: "16",
+      topic: "Today",
+    },
+    {
+      id: "17",
+      topic: "Awards",
+    },
+    {
+      id: "18",
+      topic: "Favourite",
+    },
+    {
+      id: "19",
+      topic: "Viral",
+    },
+    {
+      id: "20",
+      topic: "Even",
+    },
+    {
+      id: "21",
+      topic: "Odd",
+    },
+    {
+      id: "22",
+      topic: "Bored",
+    },
+    {
+      id: "22",
+      topic: "Bored",
+    },
+    {
+      id: "22",
+      topic: "Bored",
+    },
+    {
+      id: "22",
+      topic: "Bored",
+    },
+    {
+      id: "22",
+      topic: "Bored",
+    },
+    {
+      id: "22",
+      topic: "Bored",
+    },
+    {
+      id: "22",
+      topic: "Bored",
+    },
+    {
+      id: "22",
+      topic: "Bored",
+    },
+    {
+      id: "22",
+      topic: "Bored",
+    },
+    {
+      id: "22",
+      topic: "Bored",
+    },
+  ];
   return (
     <div className={styles.footerContainer}>
       <div className={styles.goldMain}>
