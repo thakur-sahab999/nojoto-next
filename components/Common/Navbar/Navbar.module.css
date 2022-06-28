@@ -99,7 +99,9 @@ cursor: pointer;
 .navbarCenter{
     display: flex;
     align-items: center;
+    padding-left: 1rem;
     color: #5b5959;
+    border-left: 0.1px solid #e3e0e0;
 
 }
 
@@ -140,6 +142,11 @@ cursor: pointer;
     cursor: pointer;
     color: rgb(255, 3, 33);
 }
+
+.navbarCenter:hover{
+    border-bottom: 2px solid rgb(255, 3, 33);
+}
+
 
 .menuIcon {
     display: none;

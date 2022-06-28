@@ -86,21 +86,23 @@
 }
 
 .tileContainer {
-  margin: 0.4rem;
-  padding: 0.3rem;
+  line-height: 31px;
+  float: right;
   width: auto;
-  height: auto;
-  background-color: #dedede;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  color: rgb(0, 0, 0);
+  font-size: 15px;
+  color: #808080;
+  height: -96px;
+  margin: -4px 8px 0 0;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding: 1px 2px 0 15px;
 }
 
 .tile {
   display: flex;
+  align-items: center;
 }
 
 .tile:hover {
@@ -124,6 +126,9 @@
 }
 
 
+.tileContainer :hover{
+  color: rgb(0,0,0)
+}
 
 
 .listItemContainer:hover{
@@ -145,11 +150,7 @@
   cursor: pointer;
 }
 
-.tileContainer:hover{
-  cursor: pointer;
-  color: #ffffff;
-  background-color:  rgb(239, 14, 14);
-}
+
 
 .cards::-webkit-scrollbar {
   display: none;

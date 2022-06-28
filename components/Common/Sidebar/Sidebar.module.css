@@ -14,7 +14,7 @@
     float: left;
     margin-top: 37px;
     border-right: 1px solid #eee;
-    font-size: 1rem;
+    font-size: 13px;
 }
 
 .main {
@@ -80,7 +80,8 @@
 
 .a{
     text-decoration: none;
-    color: rgb(35, 33, 33);
+    margin-left: 1rem;
+
 }
 
 .button {

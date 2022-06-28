@@ -3,7 +3,9 @@ import Tiles from "../../Tiles/Tiles.jsx";
 import Link from "next/link";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Cards from "../Cards/Cards";
+import LiveCard  from '../LiveCard/LiveCards'
 import Footer from "../Footer/Footer";
+import LiveCards from "../LiveCard/LiveCards";
 
 
 
@@ -211,7 +213,7 @@ export default function Content() {
             <div className={styles.tileContainer}>
               <Link href="/">
                 <div className={styles.tile}>
-                  <p>view all</p>
+                  <p>View All</p>
                   <ArrowForwardIosIcon />
                 </div>
               </Link>
@@ -219,7 +221,7 @@ export default function Content() {
           </div>
           <div className={styles.cards}>
             {cards.map((card, id) => (
-              <Cards data={card} key={id} />
+              <LiveCard data={card} key={id} />
             ))}
           </div>
           <div className={styles.feedHeader}>
@@ -227,7 +229,7 @@ export default function Content() {
             <div className={styles.tileContainer}>
               <Link href="/">
                 <div className={styles.tile}>
-                  <p>view all</p>
+                  <p>View All</p>
                   <ArrowForwardIosIcon />
                 </div>
               </Link>
@@ -235,7 +237,7 @@ export default function Content() {
           </div>
           <div className={styles.cards}>
             {cards.map((card, id) => (
-              <Cards data={card} key={id} />
+              <LiveCards data={card} key={id} />
             ))}
           </div>
           <div className={styles.feedHeader}>
@@ -243,7 +245,7 @@ export default function Content() {
             <div className={styles.tileContainer}>
               <Link href="/">
                 <div className={styles.tile}>
-                  <p>view all</p>
+                  <p>View All</p>
                   <ArrowForwardIosIcon />
                 </div>
               </Link>
@@ -259,8 +261,8 @@ export default function Content() {
             <div className={styles.tileContainer}>
               <Link href="/">
                 <div className={styles.tile}>
-                  <p>view all</p>
-                  <ArrowForwardIosIcon />
+                  <p>View All</p>
+                  <ArrowForwardIosIcon  />
                 </div>
               </Link>
             </div>
