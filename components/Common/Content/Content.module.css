@@ -1,5 +1,3 @@
-
-
 .leftScroll {
   background-color: rgb(255, 255, 255);
   position: fixed;
@@ -18,13 +16,11 @@
   border-right: 1px solid #eee;
 }
 
-
-
-.listItemContainer{
+.listItemContainer {
   background-color: #f8f7f7;
 }
 
-.listItem{
+.listItem {
   display: flex;
   align-items: center;
   font-size: small;
@@ -32,29 +28,26 @@
   padding: 0rem 2rem;
 }
 
-.listItem .text{
-    margin-left: 1rem;
+.listItem .text {
+  margin-left: 1rem;
 }
 
-.menuItem{
+.menuItem {
   padding: 0.5rem;
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
-  font-size:0.9rem;
+  font-size: 0.9rem;
   background-color: #efefef;
-
-
 }
 
-.menuItem .text{
+.menuItem .text {
   color: rgb(0, 0, 0);
- 
-  margin-left: 1rem;
 
+  margin-left: 1rem;
 }
 
-.menuItem .Icon{
+.menuItem .Icon {
   color: #504d4d;
   align-items: center;
   padding: 0.2;
@@ -70,6 +63,105 @@
   display: none;
 }
 
+.newPostContainer {
+  width: 78%;
+  margin-left: 9px;
+  position: relative;
+  height: 130px;
+  display: block;
+  margin-bottom: auto;
+  color: #000;
+  font-size: 13px;
+  text-align: left;
+}
+
+.newPost {
+  float: left;
+  width: 49% !important;
+  height: 120px;
+  position: absolute;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 2px #ccc;
+  border-bottom: 1px solid #cfcdcd;
+  margin-bottom: 2rem;
+  left: 0;
+}
+
+.postTop{
+  width:  100%;
+  display: flex;
+
+}
+
+.avatar {
+  float: left;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 11px 8px 4px 10px !important;
+}
+
+.avatar > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.njtPost {
+  height: 40px;
+  width: 85%;
+  float: left;
+  width: 85%;
+  margin-top: 10px;
+  border-radius: 20px;
+  text-align: left;
+  font-size: 15px;
+  padding: 0rem 0.5rem ;
+  outline: none;
+  color: #333;
+  background-color: #dddddd;
+  line-height: 30px;
+  border: 0;
+
+}
+
+.njtAction {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+    margin-top: 20px;
+  width: 100%;
+  position: absolute;
+}
+
+.add {
+ 
+  display: flex;
+
+  margin: 10px 0 5px 10px;
+}
+
+.share {
+  float: right;
+  position: relative;
+}
+
+.icon {
+  color: rgb(239, 14, 14);
+}
+
+.shareButton {
+  float: right;
+  padding: 4px 15px;
+  border: 1px solid #f5292a !important;
+  text-transform: none;
+  font-size: 14px;
+  font-style: normal;
+  color: #fff;
+  background-color: #f5292a;
+  margin: 3px 5px 5px 0;
+  border-radius: 20px;
+}
 
 .bannerContainer {
   width: auto;
@@ -80,6 +172,7 @@
   padding: 0.5rem;
 }
 .feedHeader {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -115,7 +208,6 @@
   overflow-x: scroll;
 }
 
-
 .mp_main {
   width: 100%;
   margin: 0 auto;
@@ -125,32 +217,27 @@
   padding-top: 0;
 }
 
-
-.tileContainer :hover{
-  color: rgb(0,0,0)
+.tileContainer :hover {
+  color: rgb(0, 0, 0);
 }
 
-
-.listItemContainer:hover{
+.listItemContainer:hover {
   cursor: pointer;
   background-color: #dedede;
 }
 
-.menuItem:hover{
+.menuItem:hover {
   cursor: pointer;
   background-color: #dedede;
 }
 
-.menuItem .Icon:hover{
+.menuItem .Icon:hover {
   color: rgb(239, 14, 14);
-
 }
 
-.cards:hover{
+.cards:hover {
   cursor: pointer;
 }
-
-
 
 .cards::-webkit-scrollbar {
   display: none;
@@ -166,13 +253,12 @@
   }
 }
 
+@media only screen and (max-width: 870px) {
+  .leftScroll {
+    display: none;
+  }
 
-@media only screen and (max-width: 870px){
-    .leftScroll{
-        display: none;
-    }
-
-    .contentRight{
-        width: 100%;
-    }
+  .contentRight {
+    width: 100%;
+  }
 }

@@ -69,15 +69,18 @@
   .listItemContainer:hover{
     cursor: pointer;
     background-color: #dedede;
+ 
+    
   }
 
   .menuItem:hover{
     cursor: pointer;
     background-color: #dedede;
+
   }
 
   .menuItem .Icon:hover{
-    color: rgb(239, 14, 14);
+
 
   }
 

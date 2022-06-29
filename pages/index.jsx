@@ -1,9 +1,9 @@
 import Link from "next/link"
 
 import Layout from "../components/Layout"
-import HomeContent from "../components/Common/Content/HomeContent.jsx"
+import HomeContent from "../components/Common/Content/IndexContent.jsx"
 
-function Homepage() {
+function IndexPage() {
   return (
       <div className="index">
       <HomeContent />
@@ -12,4 +12,4 @@ function Homepage() {
   )
 }
 
-export default Homepage
+export default IndexPage

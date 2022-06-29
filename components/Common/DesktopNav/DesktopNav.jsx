@@ -14,16 +14,16 @@ import { Icon } from "@iconify/react";
 
 function DesktopNav() {
   const categories = [
-    { text: "Popular", url: "/popular", id: "1" },
-    { text: "Quotes", url: "/popular", id: "2" },
-    { text: "Today", url: "/popular", id: "3" },
-    { text: "Shayari & Gazal", url: "/popular", id: "4" },
-    { text: "Suspense & Thriller", url: "/popular", id: "5" },
-    { text: "Opinion & Thoughts", url: "/popular", id: "6" },
-    { text: "Horror", url: "/popular", id: "7" },
-    { text: "Love & Romanced", url: "/popular", id: "8" },
-    { text: "Poetry", url: "/popular", id: "9" },
-    { text: "Society & Culture", url: "/popular", id: "10" },
+    { text: "Popular", url: "/topics", id: "1" },
+    { text: "Quotes", url: "/topics", id: "2" },
+    { text: "Today", url: "/topics", id: "3" },
+    { text: "Shayari & Gazal", url: "/topics", id: "4" },
+    { text: "Suspense & Thriller", url: "/topics", id: "5" },
+    { text: "Opinion & Thoughts", url: "/topics", id: "6" },
+    { text: "Horror", url: "/topics", id: "7" },
+    { text: "Love & Romanced", url: "/topics", id: "8" },
+    { text: "Poetry", url: "/topics", id: "9" },
+    { text: "Society & Culture", url: "/topics", id: "10" },
   ];
 
   const language = [
@@ -43,7 +43,9 @@ function DesktopNav() {
       </div>
       <div className={styles.menuItem}>
         <HomeIcon className={styles.Icon} />
-        <span className={styles.text}>Home</span>
+        <Link href="/">
+          <span className={styles.text}>Home</span>
+        </Link>
       </div>
       <div className={styles.menuItem}>
         <SearchIcon className={styles.Icon} />
@@ -59,7 +61,9 @@ function DesktopNav() {
       </div>
       <div className={styles.menuItem}>
         <OnlinePredictionIcon className={styles.Icon} />
-        <span className={styles.text}>Live Shows</span>
+        <Link href="/liveshow">
+          <span className={styles.text}>Live Shows</span>
+        </Link>
       </div>
       <div className={styles.menuItem}>
         <Icon icon="mdi:crown" height="27" className={styles.Icon} />

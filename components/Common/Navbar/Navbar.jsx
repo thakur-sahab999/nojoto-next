@@ -51,7 +51,7 @@ function Navbar({click}) {
           </div>
           <div className={styles.desktopLinks}>
             <div className={styles.refer}>
-              <Link href="/shop">
+              <Link href="/liveshow">
                 <PodcastsIcon />
               </Link>
               <p>Live Show</p>
@@ -62,7 +62,7 @@ function Navbar({click}) {
               </Link>
               <p>Shop</p>
             </div>
-            <button className={styles.button} > <Link href="/profile">LOGIN</Link> </button>
+            <button className={styles.button} > <Link href="/home">LOGIN</Link> </button>
             </div>
         </div>
       </div>

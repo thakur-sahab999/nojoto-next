@@ -1,0 +1,42 @@
+.feeds {
+  padding: 0.5rem;
+  display: block;
+}
+
+.feedHeader {
+    margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tileContainer {
+  line-height: 31px;
+  float: right;
+  width: auto;
+  font-size: 15px;
+  color: #808080;
+  height: -96px;
+  margin: -4px 8px 0 0;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding: 1px 2px 0 15px;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+}
+
+.tile:hover {
+  cursor: pointer;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: 3rem;
+}

@@ -4,7 +4,7 @@ import Navbar from "./Common/Navbar/Navbar";
 import Sidebar from "./Common/Sidebar/Sidebar"
 import { useState } from "react";
 import DesktopNav from "./Common/DesktopNav/DesktopNav.jsx";
-
+import NewPostModal from "./Modals/NewPost/NewPostModal"
 
 
 function Layout({ children }) {
@@ -14,10 +14,13 @@ function Layout({ children }) {
     console.log(hide)
   }
 
+  
+
   if (hide === true) {
     return (
 
       <div>
+
         <Navbar click={sidebar} />
         <Sidebar  click={sidebar}/>
         {children}
@@ -28,6 +31,7 @@ function Layout({ children }) {
     return (
 
       <div>
+      
         <Navbar click={sidebar} />
         <DesktopNav />
         {children}

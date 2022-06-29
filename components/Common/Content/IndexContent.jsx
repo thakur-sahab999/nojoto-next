@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./Content.module.css";
 import Tiles from "../../Tiles/Tiles.jsx";
 import Link from "next/link";
@@ -7,14 +6,8 @@ import Cards from "../Cards/Cards";
 import LiveCard from "../LiveCard/LiveCards";
 import Footer from "../Footer/Footer";
 import LiveCards from "../LiveCard/LiveCards";
-import CameraAltIcon from "@mui/icons-material/CameraAlt";
-import VideocamIcon from "@mui/icons-material/Videocam";
-
-
 
 export default function IndexContent() {
-
-
   const topics = [
     {
       id: "12",
@@ -198,55 +191,20 @@ export default function IndexContent() {
   return (
     <div className="contentContainer">
       <div className="contentRight">
-      
         <div className={styles.categoryBar}>
           {topics.map((topic, id) => (
             <Tiles data={topic} key={id} />
           ))}
         </div>
-        <div className={styles.newPostContainer}>
-          <div className={styles.newPost}>
-            <div className={styles.postTop}>
-              <div className={styles.avatar}>
-                <img
-                  src="https://media.nojoto.com/content/media/5490599/2022/06/profile/c3b61b651444ea6c58436670cf164ac0_5490599/default.jpg"
-                  alt=""
-                  href="/profile"
-                />
-              </div>
-              <button
-                className={styles.njtPost}
-                onClick={() => {
-                    setOpenModal(false);
-                  }}
-              >
-                Showcase your talent . . .
-              </button>
-            </div>
-            <div className={styles.njtAction}>
-              <div className={styles.add}>
-                <div className={styles.icon}>
-                  <CameraAltIcon />
-                </div>
-                <span>Add Photo</span>
-              </div>
-              <div className={styles.add}>
-                <div className={styles.icon}>
-                  <VideocamIcon />
-                </div>
-                <span>Add Video</span>
-              </div>
-              <div className={styles.share}>
-                <button className={styles.shareButton}>
-                  {" "}
-                  <Link href="/proifl">Share</Link>{" "}
-                </button>
-              </div>
-            </div>
-          </div>
+        <div className={styles.bannerContainer}>
+          <Link href="/">
+            <img
+              src="https://nojoto.com/resources/images/slider_home_banner1.jpg"
+              alt=""
+              width="90%"
+            />
+          </Link>
         </div>
-        <hr />
-        
         <div className={styles.feeds}>
           <div className={styles.feedHeader}>
             <h3>Upcoming Live Shows</h3>
