@@ -75,8 +75,8 @@ function DesktopNav() {
       </div>
 
       <ul className={styles.menuGroup}>
-        {categories.map((menu) => (
-          <div className={styles.listItemContainer}>
+        {categories.map((menu, id) => (
+          <div className={styles.listItemContainer} key={id}>
             <li className={styles.listItem}>
               <ArrowForwardIosIcon id="menu-icon" className={styles.Icon} />
               <span className={styles.text}>
@@ -94,8 +94,8 @@ function DesktopNav() {
         <span className={styles.text}>Languages</span>
       </div>
       <ul className={styles.menuGroup}>
-        {language.map((menu) => (
-          <div className={styles.listItemContainer}>
+        {language.map((menu , id) => (
+          <div className={styles.listItemContainer} key={id}>
             <li className={styles.listItem}>
               <ArrowForwardIosIcon id="menu-icon" className={styles.Icon} />
               <span className={styles.text}>

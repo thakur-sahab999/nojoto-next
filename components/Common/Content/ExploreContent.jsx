@@ -71,8 +71,8 @@ function ExploreContent() {
               </div>
             </Link>
             <div className={styles.topicVids}>
-              {videos.map((video, key=(id)) => (
-                <Link href={video.url}>
+              {videos.map((video, id) => (
+                <Link href={video.url} key={id}>
                   <div className={styles.vidCards}>
                     <img src={video.img} alt="" />
                   </div>
@@ -91,8 +91,8 @@ function ExploreContent() {
               </div>
             </Link>
             <div className={styles.topicVids}>
-              {videos.map((video, key=(id)) => (
-                <Link href={video.url}>
+              {videos.map((video, id) => (
+                <Link href={video.url} key={id}>
                   <div className={styles.vidCards}>
                     <img src={video.img} alt="" />
                   </div>

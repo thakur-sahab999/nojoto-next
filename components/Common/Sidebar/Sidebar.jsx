@@ -46,8 +46,8 @@ export default function Sidebar({click}) {
       </div>
       <hr />
       <ul className={styles.menuGroup}>
-        {main.map((menu) => (
-          <div className={styles.menuItemContainer}>
+        {main.map((menu, id) => (
+          <div className={styles.menuItemContainer} key={id}>
           <li className={styles.menuItem}>
             <ArrowForwardIosIcon  id="menu-icon"/>
             <Link href={menu.url} className={styles.a}>{menu.text}</Link>
@@ -58,8 +58,8 @@ export default function Sidebar({click}) {
       <hr />
       <h4 className={styles.menuGroupLabel}>Categories</h4>
       <ul className={styles.menuGroup}>
-        {categories.map((menu) => (
-          <div className={styles.menuItemContainer}>
+        {categories.map((menu, id) => (
+          <div className={styles.menuItemContainer} key={id}>
           <li className={styles.menuItem}>
             <ArrowForwardIosIcon id="menu-icon"/>
             <Link href={menu.url} className={styles.a} >{menu.text}</Link>
@@ -70,8 +70,8 @@ export default function Sidebar({click}) {
       <hr />
       <h4 className={styles.menuGroupLabel}>Language</h4>
       <ul className={styles.menuGroup}>
-        {language.map((menu) => (
-          <div className={styles.menuItemContainer}>
+        {language.map((menu , id) => (
+          <div className={styles.menuItemContainer} key={id}>
           <li className={styles.menuItem}>
             <ArrowForwardIosIcon id="menu-icon"/>
             <Link href={menu.url} className={styles.a}>{menu.text}</Link>
@@ -81,8 +81,8 @@ export default function Sidebar({click}) {
       </ul>
       <hr />
       <ul className={styles.menuGroup}>
-        {nojotoGold.map((menu) => (
-          <div className={styles.menuItemContainer}>
+        {nojotoGold.map((menu, id) => (
+          <div className={styles.menuItemContainer} key={id}>
           <li className={styles.menuItem}>
             <ArrowForwardIosIcon  id="menu-icon"/>
             <Link href={menu.url} className={styles.a}>{menu.text}</Link>
