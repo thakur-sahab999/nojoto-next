@@ -29,12 +29,15 @@ a {
 }
 
 .contentRight {
+  
   width: 80vw;
   float: right;
   padding-left:  1rem;
   margin-top: 10%;
   position: relative;
   min-height: 400px;
+  bottom: 50px;
+
 }
 
 hr{
@@ -53,5 +56,13 @@ hr{
 
   .contentRight{
       width: 100%;
+      
   }
+}
+
+@media only screen and (min-width: 870px){
+  .contentRight{
+    margin-top: 5%;
+    bottom: 0;
+}
 }
