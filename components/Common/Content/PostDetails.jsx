@@ -11,8 +11,11 @@ import Cards from "../Cards/Cards";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ShopIcon from "@mui/icons-material/Shop";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
-
+import { Icon } from "@iconify/react";
+import ReactPlayer from "react-player";
 function PostDetails() {
+  const source =
+    "https://media.nojoto.com/content/media/1719456/2022/07/feed/67caf03412eca92387248d65edf1fe10/67caf03412eca92387248d65edf1fe10_default.mp4";
   const cards = [
     {
       id: "1",
@@ -101,11 +104,9 @@ function PostDetails() {
             <div className={styles.postDetails}>
               <div className={styles.postLeft}>
                 <div className={styles.mainContent}>
-                  <img
-                    src="https://media.nojoto.com/content/media/5495515/2022/06/feed/8ce94d68db3c4736be57e4614dc6d7da/8ce94d68db3c4736be57e4614dc6d7da_default.jpg"
-                    alt=" "
-                    title=" "
-                  />
+                  <NoSsr>
+                    <ReactPlayer controls="true" url={source} />
+                  </NoSsr>
                 </div>
               </div>
               <div className={styles.postRight}>
@@ -137,7 +138,7 @@ function PostDetails() {
                     </div>
                   </div>
                 </div>
-                <div className={styles.liveDetails}>
+                {/* <div className={styles.liveDetails}>
                   <h2>Ghar Aangan</h2>
                   <p>Thursday, 30 June | 01:33 pm</p>
                   <p>
@@ -151,7 +152,7 @@ function PostDetails() {
                     </Link>
                   </div>
                   <p>just a min to any topic </p>
-                </div>
+                </div>*/}
                 <div className={styles.bottom}>
                   <div className={styles.reactCount}>
                     <p>1 Love</p>
@@ -211,6 +212,11 @@ function PostDetails() {
         </div>
       </div>
       <div className={styles.mobile}>
+      <div className={styles.mainContent}>
+          <NoSsr>
+            <ReactPlayer controls="true" url={source} />
+          </NoSsr>
+        </div>
         <div className={styles.header}>
           <div className={styles.refer}>
             <ArrowBackIcon />
@@ -258,13 +264,35 @@ function PostDetails() {
             </div>
           </div>
         </div>
-        <div className={styles.mainContent}>
-                <img
-                  src="https://media.nojoto.com/content/media/5495515/2022/06/feed/8ce94d68db3c4736be57e4614dc6d7da/8ce94d68db3c4736be57e4614dc6d7da_default.jpg"
-                  alt=" "
-                  title=" "
-                />
-              </div>
+        <div className={styles.contentDetails}>
+          <p> 393 Views</p>
+          <p>Nothing much.....</p>
+        </div>
+        <div className={styles.contentAction}>
+          <div className={styles.refer}>
+            <Link href="/shop">
+              <ChatIcon />
+            </Link>
+            <p>11</p>
+          </div>
+          <div className={styles.refer}>
+            <Link href="/shop">
+              <FavoriteBorderIcon />
+            </Link>
+            <p>11</p>
+          </div>
+          <div className={styles.refer}>
+            <Link href="/shop">
+              <Icon
+                icon="mdi:whatsapp"
+                color="#25d366"
+                width="24"
+                height="24"
+              />
+            </Link>
+            <p>Open In App</p>
+          </div>
+        </div>
       </div>
     </>
   );

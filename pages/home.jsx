@@ -6,8 +6,8 @@ function home() {
 
   return (
     <div>
-        {newPost && <NewPostModal setOpenModal={setNewPost} />}
-        <HomeContent  setOpenModal = {newPost}/>
+        
+        <HomeContent />
     </div>
   )
 }

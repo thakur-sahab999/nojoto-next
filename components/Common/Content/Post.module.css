@@ -48,6 +48,7 @@
   height: 100%;
   border-radius: 6px 0px 0px 6px;
   justify-content: center;
+  align-items: center;
   -webkit-border-radius: 6px 0px 0px 6px;
   -moz-border-radius: 6px 0px 0px 6px;
   -ms-border-radius: 6px 0px 0px 6px;
@@ -229,6 +230,21 @@
   outline: none;
 }
 
+
+.contentAction{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -0.4rem;
+}
+
+.contentAction .refer{
+  display: flex;
+}
+
+.contentAction .refer > p {
+  padding-left: 0.5rem;
+}
+
 .follow > button:hover {
   background-color: #f5292a;
   color: #fff;
@@ -329,7 +345,24 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 70%;
+  
+  width: 100%;
+
+}
+
+.contentDetails {
+  z-index: 4;
+  margin-top: 38rem;
+  padding: 1rem;
+  bottom: 30;
+  font-size: 13px;
+  font-weight: normal;
+  color: #fff;
+}
+
+
+.contentAction .refer:hover {
+  color: #f5292a;
 }
 
 @media only screen and (max-width: 870px) {
