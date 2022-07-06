@@ -125,7 +125,7 @@ const Footer = () => {
               <p>A unique profile always stands out.</p>
             </div>
           </div>
-          <div className={styles.benefitsList}>
+          <div className={styles.benefitsListR}>
             <div className={styles.bl_img}>
               <img
                 src="https://nojoto.com/resources/desktop/images/Save-money.png"
@@ -135,7 +135,7 @@ const Footer = () => {
             </div>
             <div className={styles.bl_dt}>
               <h4>Save Rs 5000+/month</h4>
-              <p>By watching all Live Shows for free with Gold membership.</p>
+              <p>By watching all Live Shows for <br/> free with Gold membership.</p>
             </div>
           </div>
         </div>

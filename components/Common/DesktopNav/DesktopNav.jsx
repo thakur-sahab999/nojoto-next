@@ -41,30 +41,30 @@ function DesktopNav() {
         <ShopIcon className={styles.Icon} />
         <span className={styles.text}>Nojoto App Download</span>
       </div>
+      <Link href="/">
       <div className={styles.menuItem}>
         <HomeIcon className={styles.Icon} />
-        <Link href="/">
-          <span className={styles.text}>Home</span>
-        </Link>
+        <span className={styles.text}>Home</span>    
       </div>
+      </Link>
+      <Link href="/explore">
       <div className={styles.menuItem}>
         <SearchIcon className={styles.Icon} />
-        <Link href="/explore">
           <span className={styles.text}>Explore</span>
-        </Link>
       </div>
+      </Link>
+      <Link href="/popular">
       <div className={styles.menuItem}>
         <PixIcon className={styles.Icon} />
-        <Link href="/popular">
           <span className={styles.text}>Popular</span>
-        </Link>
       </div>
+      </Link>
+      <Link href="/liveshow">
       <div className={styles.menuItem}>
         <OnlinePredictionIcon className={styles.Icon} />
-        <Link href="/liveshow">
           <span className={styles.text}>Live Shows</span>
-        </Link>
       </div>
+      </Link>
       <div className={styles.menuItem}>
         <Icon icon="mdi:crown" height="27" className={styles.Icon} />
         <span className={styles.text}>Buy Nojoto Gold</span>

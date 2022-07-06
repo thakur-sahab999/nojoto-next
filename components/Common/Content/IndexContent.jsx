@@ -197,7 +197,7 @@ export default function IndexContent() {
           ))}
         </div>
         <div className={styles.bannerContainer}>
-          <Link href="/">
+        <Link href="/">
             <img
               src="https://nojoto.com/resources/images/slider_home_banner1.jpg"
               alt=""

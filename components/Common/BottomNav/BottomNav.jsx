@@ -6,7 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import PersonIcon from '@mui/icons-material/Person';
 import OnlinePredictionIcon from '@mui/icons-material/OnlinePrediction';
-import  Link from "next/Link";
+import  Link from "next/link";
 
 
 function BottomNav() {

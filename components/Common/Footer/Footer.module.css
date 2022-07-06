@@ -95,6 +95,15 @@
     font-size: 18px;
   }
 
+  .benefitsListR{
+    display: flex;
+  }
+
+  .benefitsListR .bl_img > img {
+    width: 60%;
+    height: 100%;
+  }
+
 @media only screen and (max-width: 768px) {
   .features {
     flex-direction: column;
@@ -120,7 +129,8 @@
   .nojoto_number >ul >li >span {
     display: block;
     text-align: center;
-    font-weight: 300;
+    font-weight: 
+    300;
     font-size: 12px;
   }
 
