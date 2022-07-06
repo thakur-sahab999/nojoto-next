@@ -151,7 +151,7 @@ cursor: pointer;
     display: none;
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 900px) {
 
 .navbarCenter, .desktopLinks {
     display: none;
@@ -167,4 +167,12 @@ cursor: pointer;
     .rightLinks{
         display: none;
     }
+}
+
+
+@media only screen and (max-width: 900px){
+    .menuIcon {
+        display: none;
+    }
+
 }

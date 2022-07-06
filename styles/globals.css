@@ -15,9 +15,11 @@ a {
 }
 
 .contentContainer {
+
+  right: 0;
+
   float: right;
   top: 30px;
-  margin-left: 0;
   margin-right: 6px;
   position: relative;
   min-width: 100%;
@@ -26,13 +28,15 @@ a {
 }
 
 .contentRight {
+  top: -50px;
+  right: 0;
+
   width: 80vw;
   float: right;
   padding-left: 1rem;
-  margin-top: 10%;
   position: relative;
   min-height: 400px;
-  bottom: 10px;
+  margin-top: 100px;
 }
 
 hr {

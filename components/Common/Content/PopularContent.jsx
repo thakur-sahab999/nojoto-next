@@ -2,8 +2,10 @@ import React from "react";
 import Cards from "../Cards/Cards";
 import Footer from "../Footer/Footer";
 import styles from "./Popular.module.css";
+import result from "../../data"
 
 function TopicsContent() {
+
   const topics = [
     {
       id: "12",
@@ -87,87 +89,12 @@ function TopicsContent() {
     },
   ];
 
-  const cards = [
-    {
-      id: "1",
-      name: "Something",
-      profile: "../../../public/resources/Cards/profile.jpg",
-      video: "../../../public/resources/Cards/card.jpg",
-      title: "Comedy Gold",
-      date: "Sun 12 Jun | 9:00 pm",
-      bookingCount: "1378",
-    },
-    {
-      id: "2",
-      name: "Something",
-      profile: "../../../public/resources/Cards/profile.jpg",
-      video: "../../../public/resources/Cards/card.jpg",
-      title: "Comedy Gold",
-      date: "Sun 12 Jun | 9:00 pm",
-      bookingCount: "1378",
-    },
-    {
-      id: "3",
-      name: "Something",
-      profile: "../../../public/resources/Cards/profile.jpg",
-      video: "../../../public/resources/Cards/card.jpg",
-      title: "Comedy Gold",
-      date: "Sun 12 Jun | 9:00 pm",
-      bookingCount: "1378",
-    },
-    {
-      id: "4",
-      name: "Something",
-      profile: "../../../public/resources/Cards/profile.jpg",
-      video: "../../../public/resources/Cards/card.jpg",
-      title: "Comedy Gold",
-      date: "Sun 12 Jun | 9:00 pm",
-      bookingCount: "1378",
-    },
-    {
-      id: "5",
-      name: "Something",
-      profile: "../../../public/resources/Cards/profile.jpg",
-      video: "../../../public/resources/Cards/card.jpg",
-      title: "Comedy Gold",
-      date: "Sun 12 Jun | 9:00 pm",
-      bookingCount: "1378",
-    },
-    {
-      id: "6",
-      name: "Something",
-      profile: "../../../public/resources/Cards/profile.jpg",
-      video: "../../../public/resources/Cards/card.jpg",
-      title: "Comedy Gold",
-      date: "Sun 12 Jun | 9:00 pm",
-      bookingCount: "1378",
-    },
-    {
-      id: "7",
-      name: "Something",
-      profile: "../../../public/resources/Cards/profile.jpg",
-      video: "../../../public/resources/Cards/card.jpg",
-      title: "Comedy Gold",
-      date: "Sun 12 Jun | 9:00 pm",
-      bookingCount: "1378",
-    },
-    {
-      id: "8",
-      name: "Something",
-      profile: "../../../public/resources/Cards/profile.jpg",
-      video: "../../../public/resources/Cards/card.jpg",
-      title: "Comedy Gold",
-      date: "Sun 12 Jun | 9:00 pm",
-      bookingCount: "1378",
-    },
-  ];
-
   return (
     <div className="contentContainer">
       <div className="contentRight">
         <div>
           <div className={styles.TopicsContainer}>
-              {cards.map((card, id) => (
+              {result.map((card, id) => (
                   <Cards data={card} key={id} className="grid-item" />
               ))}
           </div>

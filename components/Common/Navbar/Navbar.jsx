@@ -12,7 +12,7 @@ import PodcastsIcon from '@mui/icons-material/Podcasts';
 import SearchIcon from '@mui/icons-material/Search';
 
 function Navbar({click}) {
-
+ const source = "https://media.nojoto.com/resources/desktop/images/nojoto_logo_horizontal.png";
 
   return (
     <>
@@ -22,7 +22,7 @@ function Navbar({click}) {
             <MenuIcon onClick={click} id="button" className={styles.menuIcon} />
             <div className={styles.menu}>
               <Link href="/">
-                <Image src={nojoto} alt="" width={154} height={54} />
+                <img src={source} alt="" width={140} height={50} />
               </Link>
             </div>
             <p className={styles.langMenu}>English</p>

@@ -3,7 +3,7 @@ import styles from "./Topics.module.css";
 import Tiles from "../../Tiles/Tiles";
 import Cards from "../Cards/Cards";
 import Footer from "../Footer/Footer";
-
+import result from "../../data"
 function TopicsContent() {
   const topics = [
     {
@@ -159,7 +159,7 @@ function TopicsContent() {
 
           <div className={styles.profileTabs}>
             <div className={styles.TabbedPanelsContent}>
-                  {cards.map((card, id) => (
+                  {result.map((card, id) => (
                     <Cards data={card} key={id} className="grid-item"/>
                   ))}
             </div>

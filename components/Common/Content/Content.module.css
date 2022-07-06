@@ -204,8 +204,8 @@
 
 .cards {
   width: 100%;
-  display: flex;
-  overflow-x: scroll;
+  
+  overflow-x: hidden;
 }
 
 .mp_main {

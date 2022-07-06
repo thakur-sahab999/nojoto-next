@@ -6,7 +6,7 @@ import Cards from "../Cards/Cards";
 import LiveCard from "../LiveCard/LiveCards";
 import Footer from "../Footer/Footer";
 import LiveCards from "../LiveCard/LiveCards";
-
+import result from "../../data"
 export default function IndexContent() {
   const topics = [
     {
@@ -218,7 +218,7 @@ export default function IndexContent() {
             </div>
           </div>
           <div className={styles.cards}>
-            {cards.map((card, id) => (
+            {cards.slice(0, 4).map((card, id) => (
               <LiveCard data={card} key={id} />
             ))}
           </div>
@@ -234,7 +234,7 @@ export default function IndexContent() {
             </div>
           </div>
           <div className={styles.cards}>
-            {cards.map((card, id) => (
+            {cards.slice(0, 4).map((card, id) => (
               <LiveCards data={card} key={id} />
             ))}
           </div>
@@ -250,7 +250,7 @@ export default function IndexContent() {
             </div>
           </div>
           <div className={styles.cards}>
-            {cards.map((card, id) => (
+            {result.slice(0, 4).map((card, id) => (
               <Cards data={card} key={id} />
             ))}
           </div>
@@ -266,7 +266,7 @@ export default function IndexContent() {
             </div>
           </div>
           <div className={styles.cards}>
-            {cards.map((card, id) => (
+            {result.slice(0, 4).map((card, id) => (
               <Cards data={card} key={id} />
             ))}
           </div>
