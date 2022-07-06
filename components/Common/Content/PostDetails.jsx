@@ -13,6 +13,7 @@ import ShopIcon from "@mui/icons-material/Shop";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import { Icon } from "@iconify/react";
 import ReactPlayer from "react-player";
+import result from "../../data";
 function PostDetails() {
   const source =
     "https://media.nojoto.com/content/media/1719456/2022/07/feed/67caf03412eca92387248d65edf1fe10/67caf03412eca92387248d65edf1fe10_default.mp4";
@@ -203,7 +204,7 @@ function PostDetails() {
             <div className={styles.moreLikeThis}>
               <h1 className={styles.heading}>More Like This</h1>
               <div className={styles.cards}>
-                {cards.map((card, id) => (
+                {result.map((card, id) => (
                   <Cards data={card} key={id} className="grid-item" />
                 ))}
               </div>
