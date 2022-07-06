@@ -116,7 +116,7 @@ function PostDetails() {
                       <img
                         src="https://media.nojoto.com/content/media/5495515/2022/06/profile/89555d4241889ff1a1695e2b0e8c57bb_5495515/small.jpg"
                         alt="साद रूदौलवी سعدؔ ردولوی"
-                        class=""
+                        className=""
                       />
                     </div>
                     <div className={styles.userName}>
@@ -242,7 +242,7 @@ function PostDetails() {
               <img
                 src="https://media.nojoto.com/content/media/5495515/2022/06/profile/89555d4241889ff1a1695e2b0e8c57bb_5495515/small.jpg"
                 alt="साद रूदौलवी سعدؔ ردولوی"
-                class=""
+                className=""
               />
             </div>
             <div className={styles.userName}>
