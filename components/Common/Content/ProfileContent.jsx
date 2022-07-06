@@ -2,6 +2,7 @@ import styles from "./Profile.module.css";
 import Footer from "../Footer/Footer";
 import Cards from "../Cards/Cards";
 import Link from "next/link";
+import result from "../../data";
 
 function ProfileContent() {
   const topics = [
@@ -228,7 +229,7 @@ function ProfileContent() {
 
           <div className={styles.profileTabs}>
             <div className={styles.TabbedPanelsContent}>
-                  {cards.map((card, id) => (
+                  {result.map((card, id) => (
                     <Cards data={card} key={id} className="grid-item"/>
                   ))}
             </div>
